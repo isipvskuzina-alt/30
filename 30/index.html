@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доска идей</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <h1>💡 Доска идей</h1>
+
+        <!-- Форма добавления -->
+        <div class="form">
+            <div class="form-row">
+                <div class="field">
+                    <label for="ideaTitle">Название идеи:</label>
+                    <input type="text" id="ideaTitle" placeholder="Название...">
+                </div>
+                <div class="field">
+                    <label for="ideaImage">Ссылка на изображение:</label>
+                    <input type="text" id="ideaImage" placeholder="https://example.com/image.jpg">
+                </div>
+            </div>
+            <div class="field">
+                <label for="ideaDescription">Описание:</label>
+                <textarea id="ideaDescription" placeholder="Опишите идею..." rows="3"></textarea>
+            </div>
+            <button id="addBtn">➕ Добавить идею</button>
+        </div>
+
+        <!-- Доска -->
+        <div class="board" id="boardContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
